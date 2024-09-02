@@ -4,15 +4,20 @@ import Login from "../auth/Login";
 import SignUp from "../auth/SignUp";
 import ForgotPassword from "../auth/ForgotPassword";
 import ResetPassword from "../auth/ResetPassword";
+import Dashboard from "../dashboard/Dashboard";
+import AddAttribute from "../Pages/AddAttribute";
 
 
 
 const route = createHashRouter([
   {
     path: "/dashboard",
-    element: <AllPages />,
+    element: <Dashboard />,
     children: [
-
+      {
+        path: "/dashboard",
+        element: <AddAttribute />
+      },
     ],
   },  
 
@@ -32,6 +37,10 @@ const route = createHashRouter([
     path: "/reset-password",
     element: <ResetPassword />
   },
+  // {
+  //   path: "/dashboard",
+  //   element: <Dashboard />
+  // },
 ]);
 
 function Routers() {

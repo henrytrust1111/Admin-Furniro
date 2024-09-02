@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode:"class",
 
   theme: {
     extend: {
@@ -20,8 +21,10 @@ export default {
         "--clr-secondary": "#1e1611",
         "--clr-light-gray-v1": "#B0B0B0",
         "--clr-light-gray-v2": "#9f9f9f",
+        "--clr-light-gray-v3": "#e1e1e1",
         "--clr-light-gray": "#898989",
         "--clr-black-shade-v1": "#3A3A3A",
+        "--clr-dark": "#1E1B4B",
       },
       backgroundImage: {
         'room': "url('/images/room.png')",
